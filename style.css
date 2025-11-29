@@ -1,0 +1,97 @@
+/* ===== Fondo general estilo cristal ===== */
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0;
+  background:linear-gradient(135deg,#3b82f6,#9333ea);
+  font-family:system-ui;
+}
+
+/* ===== FORM GLASS ===== */
+.form {
+  width:420px;
+  padding:40px;
+  border-radius:18px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+
+  /* Glassmorphism 🔥 */
+  background:rgba(255,255,255,0.10);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.28);
+  box-shadow:0 0 40px rgba(0,0,0,.25);
+}
+
+/* ===== INPUTS ===== */
+.inputForm{
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:10px;
+  height:48px;
+  display:flex;
+  align-items:center;
+  padding-left:12px;
+  transition:.25s;
+}
+.inputForm:focus-within{
+  border-color:#fff;
+  transform:scale(1.03);
+}
+.input{
+  border:none;
+  background:transparent;
+  color:white;
+  width:100%;
+  font-size:16px;
+}
+.input::placeholder{color:#d6d6d6;}
+.input:focus{outline:none;}
+
+/* ===== TÍTULOS Y LABELS ===== */
+label{color:white;font-size:15px;font-weight:600;}
+.span{
+  color:#ffffff;
+  font-weight:700;
+  cursor:pointer;
+  text-shadow:0 0 8px #fff;
+}
+
+/* ===== BOTÓN PRINCIPAL ===== */
+.button-submit{
+  background:white;
+  color:#000;
+  height:48px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+.button-submit:hover{
+  transform:scale(1.05);
+  background:#e5e5e5;
+}
+
+/* ===== Google / Apple ===== */
+.btn{
+  height:48px;
+  border-radius:10px;
+  border:none;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(5px);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+.btn:hover{
+  transform:scale(1.05);
+  background:rgba(255,255,255,0.28);
+}
+
+/* ===== Texto inferior ===== */
+.p{color:#fff;text-align:center;font-size:14px;}
